@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Hockey Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar container my-5 max-w-[1210px] mx-auto bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost font-extrabold text-4xl"
+            >Hockey<span class="text-red-400 pl-0 pr-0">'</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <!-- <li>
+                        <details>
+                            <summary>Parent</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li> -->
+            <li><a>contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <img class="h-6 w-6 mr-4 hidden" src="./Images/search.png" alt="">
+          <a class="btn h-14 w-[160px] text-white bg-red-500">Get Ticket</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!------------------------------------------ Carousal Banner -------------------------------->
+
+      <div class="rounded-2xl  max-w-[1200px] mx-auto">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute bg-[#131318] rounded-2xl p-8  h-[160px] w-[520px] left-[625px] top-[350px]">
+                <h3 class="text-white font-extrabold text-2xl">Meet all the heros on the playground</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti dolores ipsum!</p>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-[50px] top-[500px]"
+            >
+              <a href="#slide4" class="btn btn-circle mr-4">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute bg-[#131318] rounded-2xl p-8  h-[160px] w-[520px] left-[625px] top-[350px]">
+                <h3 class="text-white font-extrabold text-2xl">Meet all the heros on the playground</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti dolores ipsum!
+                </p>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-[50px] top-[500px]"
+            >
+              <a href="#slide1" class="btn btn-circle mr-4">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full"
+            />
+            <div class="absolute bg-[#131318] rounded-2xl p-8  h-[160px] w-[520px] left-[625px] top-[350px]">
+                <h3 class="text-white font-extrabold text-2xl">Meet all the heros on the playground</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti dolores ipsum!
+                </p>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-[50px] top-[500px]"
+            >
+              <a href="#slide2" class="btn btn-circle mr-4">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+              class="w-full"
+            />
+            <div class="absolute bg-[#131318] rounded-2xl p-8  h-[160px] w-[520px] left-[625px] top-[350px]">
+                <h3 class="text-white font-extrabold text-2xl">Meet all the heros on the playground</h3>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti dolores ipsum!
+                </p>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-[50px] top-[500px]"
+            >
+              <a href="#slide3" class="btn btn-circle mr-4">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------End of Carousal Banner ------------------------->
+
+      <!--------------------------------------- Naming ------------------------------------>
+
+      <section class="mt-12 py-6 max-w-[1200px] mx-auto">
+        <div class="naming py-4  text-5xl text-[#131318] font-extrabold text-center">
+          Professional Hockeys Club
+        </div>
+        <p class="text-center font-medium text-gray-500 px-48 py-6">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+          assumenda in quasi. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Repellendus?
+        </p>
+      </section>
+
+      <!---------------------------------------End of Naming ------------------------------------>
+
+      <!---------------------------------------- Performance Status ------------------------------>
+
+      <section class="facilities mt-6 max-w-[1200px] mx-auto px-12">
+        <div class="flex gap-x-4">
+          <div class="facility1">
+            <div class="flex justify-center">
+              <div
+                class="radial-progress text-[#FF4240]"
+                style="--value: 85"
+                role="progressbar"
+              >
+                85%
+              </div>
+            </div>
+            <h3 class="text-center font-bold text-lg mt-4 mb-3">
+              Player facility
+            </h3>
+            <p class="text-center text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="facility2">
+            <div class="flex justify-center">
+              <div
+                class="radial-progress text-[#49D293]"
+                style="--value: 90"
+                role="progressbar"
+              >
+                90%
+              </div>
+            </div>
+            <h3 class="text-center font-bold text-lg mt-4 mb-3">
+              Experienced Coach
+            </h3>
+            <p class="text-center text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="facility3">
+            <div class="flex justify-center">
+              <div
+                class="radial-progress text-[#FFB546]"
+                style="--value: 70"
+                role="progressbar"
+              >
+                70%
+              </div>
+            </div>
+            <h3 class="text-center font-bold text-lg mt-4 mb-3">
+              Senior Player
+            </h3>
+            <p class="text-center text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="facility4">
+            <div class="flex justify-center">
+              <div
+                class="radial-progress text-[#4C8DF1] ]"
+                style="--value: 80"
+                role="progressbar"
+              >
+                80%
+              </div>
+            </div>
+            <h3 class="text-center font-bold text-lg mt-4 mb-3">
+              Training Ground
+            </h3>
+            <p class="text-center text-gray-500">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------------------End of Performance Status ------------------------->
+
+      <!---------------------------------------- Programs ---------------------------------------->
+
+      <section class="mt-12 pt-6 max-w-[1200px] mx-auto">
+        <div class="naming py-6">
+            <div class=" text-5xl py-4 text-[#131318] font-extrabold text-center">
+                Program Section
+            </div>
+            <p class="text-center font-medium text-gray-500 px-48 py-6">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+                assumenda in quasi . Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Repellendus.
+            </p>
+        </div>
+        <div class="images grid gap-4">
+          <div
+            class="hero col-span-1 h-[340px] rounded-2xl"
+            style="
+              background-image: url(./Images/2.png);
+            "
+          >
+            <div class="hero-overlay bg-opacity-60 rounded-2xl "></div>
+            <div class="hero-content text-neutral-content">
+              <div class="pr-32 pl-10 pt-8 ">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hero col-span-1 h-[340px] rounded-2xl"
+            style="
+              background-image: url('./Images/3.png');
+            "
+          >
+            <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+            <div class="hero-content text-neutral-content">
+              <div class="pr-32 pl-10 pt-8">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hero col-span-2 h-[450px] rounded-2xl"
+            style="
+              background-image: url('./Images/4.png');
+            "
+          >
+            <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+            <div class="hero-content text-neutral-content">
+              <div class="pr-[480px] pl-10 pt-40 ">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------------------------End of Programs ---------------------------------->
+
+      <!---------------------------------- Products Cards ======================----------------------->
+      <div class="naming rounded-2xl border-y-2 border-dashed mt-12 max-w-[1200px] mx-auto py-6">
+        <div class=" text-5xl py-4 text-[#131318] font-extrabold text-center">
+          Our New Products
+        </div>
+        <p class="text-center font-medium text-gray-500 px-48 py-6">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+          assumenda in quasi . Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Repellendus.
+        </p>
+      </div>
+
+      <div class="product-cards  mt-12 max-w-[1200px] mx-auto grid grid-cols-2 gap-4">
+
+        <div class="productCard1 rounded-2xl border-2 p-4 flex gap-x-4 h-[218px]">
+            <img src="./Images/5.png" alt="">
+            <div class="description">
+                <div class="rating flex justify-start gap-x-4 mb-4">
+                    <div class="star flex gap-x-2">
+                        <img class="h-6 w-6" src="./Images/star11.svg" alt="">
+                        <div class="text">5.0</div>
+                    </div>
+                    <div class="eye flex gap-x-2">
+                        <img class="w-6 h-6" src="./Images/eye444.svg" alt="">
+                        <div class="text">20</div>
+                    </div>
+                    <div class="heart flex gap-x-2">
+                        <img class="w-6 h-6" src="./Images/heart11.svg" alt="">
+                        <div class="text">200</div>
+                    </div>
+                </div>
+                <h1 class="mb-5 font-extrabold text-xl">Baseball Jacket</h1>
+                <p class="mb-5  text-[#131318]/50">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+                <div class="prices flex gap-x-2 ">
+                    <div class="price text-[#FF4240] font-extrabold text-lg">price - $22.00</div>
+                    <div class="delivery flex gap-x-2">
+                        <img src="./Images/deliv11.svg" alt="">
+                        <div class="text  text-[#131318]/50">Delivery Fee:Free</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="productCard2 rounded-2xl border-2 flex gap-x-4 p-4 h-[218px]">
+            <img src="./Images/6.png" alt="">
+            <div class="description">
+              <div class="rating flex justify-start gap-x-4 mb-4">
+                <div class="star flex gap-x-2">
+                  <img class="h-6 w-6" src="./Images/star11.svg" alt="">
+                  <div class="text">5.0</div>
+                </div>
+                <div class="eye flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/eye444.svg" alt="">
+                  <div class="text">20</div>
+                </div>
+                <div class="heart flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/heart11.svg" alt="">
+                  <div class="text">200</div>
+                </div>
+              </div>
+              <h1 class="mb-5 font-extrabold text-xl">Football Jacket</h1>
+              <p class="mb-5  text-[#131318]/50">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+              <div class="prices flex gap-x-2 ">
+                <div class="price text-[#FF4240] font-extrabold text-lg">price - $22.00</div>
+                <div class="delivery flex gap-x-2">
+                  <img src="./Images/deliv11.svg" alt="">
+                  <div class="text  text-[#131318]/50">Delivery Fee:Free</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="productCard3 rounded-2xl border-2 flex gap-x-4 p-4 h-[218px]">
+            <img src="./Images/7.png" alt="">
+            <div class="description">
+              <div class="rating flex justify-start gap-x-4 mb-4">
+                <div class="star flex gap-x-2">
+                  <img class="h-6 w-6" src="./Images/star11.svg" alt="">
+                  <div class="text">5.0</div>
+                </div>
+                <div class="eye flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/eye444.svg" alt="">
+                  <div class="text">20</div>
+                </div>
+                <div class="heart flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/heart11.svg" alt="">
+                  <div class="text">200</div>
+                </div>
+              </div>
+              <h1 class="mb-5 font-extrabold text-xl">Cap for Football</h1>
+              <p class="mb-5  text-[#131318]/50">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+              <div class="prices flex gap-x-2 ">
+                <div class="price text-[#FF4240] font-extrabold text-lg">price - $22.00</div>
+                <div class="delivery flex gap-x-2">
+                  <img src="./Images/deliv11.svg" alt="">
+                  <div class="text  text-[#131318]/50">Delivery Fee:Free</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="productCard4 border-2 rounded-2xl flex gap-x-4 p-4 h-[218px]">
+            <img src="./Images/8.png" alt="">
+            <div class="description">
+              <div class="rating flex justify-start gap-x-4 mb-4">
+                <div class="star flex gap-x-2">
+                  <img class="h-6 w-6" src="./Images/star11.svg" alt="">
+                  <div class="text">5.0</div>
+                </div>
+                <div class="eye flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/eye444.svg" alt="">
+                  <div class="text">20</div>
+                </div>
+                <div class="heart flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/heart11.svg" alt="">
+                  <div class="text">200</div>
+                </div>
+              </div>
+              <h1 class="mb-5 font-extrabold text-xl">Football Jersey</h1>
+              <p class="mb-5  text-[#131318]/50">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+              <div class="prices flex gap-x-2 ">
+                <div class="price text-[#FF4240] font-extrabold text-lg">price - $22.00</div>
+                <div class="delivery flex gap-x-2">
+                  <img src="./Images/deliv11.svg" alt="">
+                  <div class="text  text-[#131318]/50">Delivery Fee:Free</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="productCard5 border-2 rounded-2xl flex gap-x-4 p-4 h-[218px]">
+            <img src="./Images/9.png" alt="">
+            <div class="description">
+              <div class="rating flex justify-start gap-x-4 mb-4">
+                <div class="star flex gap-x-2">
+                  <img class="h-6 w-6" src="./Images/star11.svg" alt="">
+                  <div class="text">5.0</div>
+                </div>
+                <div class="eye flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/eye444.svg" alt="">
+                  <div class="text">20</div>
+                </div>
+                <div class="heart flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/heart11.svg" alt="">
+                  <div class="text">200</div>
+                </div>
+              </div>
+              <h1 class="mb-5 font-extrabold text-xl">Baseball Helmet</h1>
+              <p class="mb-5  text-[#131318]/50">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+              <div class="prices flex gap-x-2 ">
+                <div class="price text-[#FF4240] font-extrabold text-lg">price - $22.00</div>
+                <div class="delivery flex gap-x-2">
+                  <img src="./Images/deliv11.svg" alt="">
+                  <div class="text  text-[#131318]/50">Delivery Fee:Free</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="productCard6 border-2 rounded-2xl flex gap-x-4 p-4 h-[218px]">
+            <img src="./Images/10.png" alt="">
+            <div class="description">
+              <div class="rating flex justify-start gap-x-4 mb-4">
+                <div class="star flex gap-x-2">
+                  <img class="h-6 w-6" src="./Images/star11.svg" alt="">
+                  <div class="text">5.0</div>
+                </div>
+                <div class="eye flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/eye444.svg" alt="">
+                  <div class="text">20</div>
+                </div>
+                <div class="heart flex gap-x-2">
+                  <img class="w-6 h-6" src="./Images/heart11.svg" alt="">
+                  <div class="text">200</div>
+                </div>
+              </div>
+              <h1 class="mb-5 font-extrabold text-xl">Football for sale </h1>
+              <p class="mb-5  text-[#131318]/50">Lorem ipsum dolor sit amet consectetur. Lorem, ipsum dolor.</p>
+              <div class="prices flex gap-x-2 ">
+                <div class="price text-[#FF4240] font-extrabold text-lg">price - $22.00</div>
+                <div class="delivery flex gap-x-2">
+                  <img src="./Images/deliv11.svg" alt="">
+                  <div class="text font-medium text-[16px] text-[#131318]/50 inline pb-3 ">Delivery Fee:Free</div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+      <!---------------------------------End of- Products Cards ======================----------------------->
+
+      <!--------------------------------- Get in Touch --------------------------------------------------------->
+      <div class="naming rounded-2xl border-y-2 border-dashed mt-12 max-w-[1200px] mx-auto py-6">
+        <div class=" text-5xl py-4 text-[#131318] font-extrabold text-center">
+          Get In Touch
+        </div>
+        <p class="text-center font-medium text-gray-500 px-48 py-6">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+          assumenda in quasi . Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Repellendus.
+        </p>
+      </div>
+      <section class="max-w-[1200px] mx-auto mt-12">
+        <div class="inputs flex  gap-x-8">
+          <div class="cards p-8 w-2/5 ">
+            <div class="card1 p-8 mb-4 bg-[#BCED6D]/[.09] h-52">
+              <img class="mb-8" src="./Images/phone1.svg" alt="">
+              <div class="text mb-3">Phone Number</div>
+              <div class="linka">675789384938</div>
+            </div>
+            <div class="card2 p-8 mb-4 bg-[#FDDD5F]/[.09] h-52">
+              <img class="mb-8" src="./Images/messege.svg" alt="">
+              <div class="text mb-3">Email</div>
+              <div class="linka">sharifnobin333@gmail.com</div>
+            </div>
+            <div class="card3 p-8 bg-[#629CF3]/[.09] h-52">
+              <img class="mb-8" src="./Images/google-maps.svg" alt="">
+              <div class="text mb-3">Location</div>
+              <div class="linka">Baghmara, Narayangonj</div>
+            </div>
+          </div>
+          <div class="textInputs w-3/5 grid grid-cols-2 gap-3">
+            
+          <label class="form-control col-span-1 w-full max-w-xs">
+            <div class="label">
+              <span class="label-text font-bold text-lg">Your Name</span>
+            </div>
+            <input type="text" placeholder="Enter Your Full Name" class="input bg-gray-100/[.09] input-bordered w-full max-w-xs" />
+          </label>
+
+          <label class="form-control col-span-1 w-full max-w-xs">
+            <div class="label">
+              <span class="label-text font-bold text-lg">Your Email</span>
+            </div>
+            <input type="email" placeholder="Enter Your Email" class="input  bg-gray-100/[.09] input-bordered w-full max-w-xs" />
+          </label>
+
+          <label class="form-control col-span-1 w-full max-w-xs">
+            <div class="label">
+              <span class="label-text font-bold text-lg">Subject</span>
+            </div>
+            <input type="text" placeholder="Enter Your Subject" class="input  bg-gray-100/[.09] input-bordered w-full max-w-xs" />
+          </label>
+
+          <label class="form-control col-span-1 w-full max-w-xs">
+            <div class="label">
+              <span class="label-text font-bold text-lg">Phone Number</span>
+            </div>
+            <input type="text" placeholder="Enter Your Phone Number" class="input  bg-gray-100/[.09] input-bordered w-full max-w-xs" />
+          </label>
+          
+            <label class="form-control col-span-2">
+              <div class="label">
+                <span class="label-text text-lg font-bold">Message</span>
+              </div>
+              <textarea class="textarea   bg-gray-100/[.09] textarea-bordered h-[260px]" placeholder="Write Your Message"></textarea>
+            </label>
+            <button class="btn col-span-2 bg-[#FF4240]">Send Message</button>
+          
+          </div>
+        </div>
+        <div class="social-media bg-[#131318]/[.03] p-8 max-w-[1200px] mx-auto mt-12">
+          <h3 class="text-center pb-6">Social Media</h3>
+          <div class="icons flex justify-center gap-x-4">
+            <img src="./Images/twitter.svg" alt="">
+            <img src="./Images/facebook.svg" alt="">
+            <img src="./Images/insta.svg" alt="">
+            <img src="./Images/github.svg" alt="">
+          </div>
+        </div>
+      </section> 
+
+      <!---------------------------------End of Get in Touch ----------------------------------------------------->
+   </main>
+
+
+    <footer class="footer max-w-[1200px] mx-auto mt-12 p-40 bg-[#131318] text-neutral-content">
+      <nav>
+        <h1 class="font-extrabold text-2xl text-white">Get in Touch</h1>
+        <a class="link decoration-neutral-700">We are always with you. If you have any<br> inquiry contact with us though <br> email and phone number</a>
+        <a class="link link-hover">sharifnobin333@gmail.com</a>
+        <a class="link link-hover">01933262948</a>
+      </nav>
+      <nav>
+        <h6 class="font-extrabold text-lg text-white">Company</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="font-extrabold text-lg text-white">Support</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="font-extrabold text-lg text-white">Service</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+  </body>
+</html>
